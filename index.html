@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sparks Bank</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        h1{
+            text-align: left;
+            color: rgb(126, 29, 222);
+            font-size: 55px;
+            text-align: center;
+        }
+        
+
+        .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,3,0.7),rgba(4,9,3,0.7 )),url(img/backimg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+      
+        .course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+        .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fcfcfc;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+h3 a {
+    text-decoration: none;
+    font-weight: 600;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+    </style>
+</head>
+
+<body>
+    <section class="header">
+    <h1>Sparks Bank</h1>
+    <nav class="nav">
+        <div class="nav-links">
+            <ul>
+                <li> <a href="">Home</a></li>
+                <li> <a href="transmoney.html">Transfer Money</a></li>
+                <li> <a href="transhistroy.html">Transfers History</a></li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+    <section class="course">
+        <h2>Faclities </h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim odit consequatur culpa!</p>
+        <div class="row">
+          <div class="course-col">
+            <h3><a href=""> Your Customers</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores!</p>
+          </div>
+          <div class="course-col">
+            <h3><a href="transmoney.html"> Transfer Money</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores!</p>
+          </div>
+          <div class="course-col">
+            <h3><a href="transhistroy.html"> Transfer History</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, dolores!</p>
+          </div>
+        </div>
+    </section>
+    
+</body>
+</html>
